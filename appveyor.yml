@@ -2,7 +2,7 @@ image: ubuntu
 
 environment:
   github_auth_token:
-    secure: OCMyGTAT++mBzpAtCFokNrb6HW/uppvgWXcW4w0vIxFEpFBdS37eS5zle+4UQ5Je
+    secure: 5TD7b0UBRJmIFj6X1CWJnDnnl/tkpoWnpDdy3CnPwpR+Indp/aSXdp14xACOGm45
 
 before_build:
   - sh: docker build --tag private/rabbitmq-public-umbrella --file ./Dockerfile ./context/
