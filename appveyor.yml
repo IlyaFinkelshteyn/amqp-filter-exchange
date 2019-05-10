@@ -21,7 +21,7 @@ artifacts:
     type: file
 
 deploy:
-  tag: $(APPVEYOR_REPO_TAG_NAME)
+  # tag: $(APPVEYOR_REPO_TAG_NAME)
   provider: GitHub
   auth_token:
     secure: $Env:github_auth_token
