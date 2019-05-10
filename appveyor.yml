@@ -21,7 +21,6 @@ artifacts:
     type: file
 
 deploy:
-  description: 'Release description'
   tag: $(APPVEYOR_REPO_TAG_NAME)
   provider: GitHub
   auth_token:
@@ -30,4 +29,5 @@ deploy:
   draft: false
   prerelease: false
   on:
-    branch: master                 
+    branch: master # release from master branch only
+    APPVEYOR_REPO_TAG: true # deploy on tag push only       
