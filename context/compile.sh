@@ -4,5 +4,5 @@ echo "*********************"
 pwd
 find .
 echo "*********************"
-make
+#make
 #make -n dist
